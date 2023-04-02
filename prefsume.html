@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prioritize for Preferred Unit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Drop Downs display your options. Drag-and-Drop to order your preferences!</h1> <br>
+    <nav role="navigation" class="primary-navigation">
+        <ul>
+          <li>Infantry &dtrif;
+            <ul class="dropdown">
+                <li>1-21 ACo</li>
+                <li>1-27 BCo</li>
+                <li>2-11 CCo</li>
+                <li>2-27 ACo</li>
+                <li>2-35 BCo</li>
+                <li>2-35 CCo</li>
+              </ul>
+          </li>
+          <li>Engineers &dtrif;
+            <ul class="dropdown">
+                <li>65 BEB ACo</li>
+                <li>29 BEB BCo</li>
+                <li>2-14 ECo</li>
+                <li>3-4 ECo</li>
+                <li>2-6 ECo</li>
+              </ul>
+          </li>
+          <li>Aviation &dtrif;
+            <ul class="dropdown">
+                <li>1-25 ACo</li>
+                <li>1-25 BCo</li>
+                <li>2-25 BCo</li>
+                <li>2-25 DCo</li>
+                <li>3-25 ACo</li>
+              </ul>
+          </li>
+          <li>Sustainment &dtrif;
+            <ul class="dropdown">
+                <li>225 BSB BCo</li>
+                <li>325 BSB ACo</li>
+                <li>209 ASB ACo</li>
+              </ul>
+          </li>
+          <li>Assymetrical &dtrif;
+            <ul class="dropdown">
+                <li>Lightning Academy </li>
+                <li>NCO Academy Hawaii</li>
+                <li>Replacement Company</li>
+                <li>Lightning Labs Innovation</li>
+              </ul>
+          </li>
+      </nav>
+<br><br><br>
+
+        <h2>Drag and Drop Boxes</h2>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">Available Units
+            <hr>
+            <p draggable="true" ondragstart="drag(event)" id="drag1">1-21 ACo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag2">1-27 BCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag3">2-11 CCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag4">2-27 ACo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag5">2-35 BCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag6">2-35 CCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag7">65 BEB Co</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag8">29 BEB Co</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag9">2-14 ECo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag10">3-4 ECo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag11">2-6 ECo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag12">1-25 ACo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag13">1-25 BCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag14">2-25 BCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag15">2-25 DCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag16">3-25 ACo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag17">225 BSB BCo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag18">325 BSB ACo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag19">209 ASB ACo</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag20">Lightning Academy</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag21">NCO Academy Hawaii</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag22">Replacement Company</p>
+            <p draggable="true" ondragstart="drag(event)" id="drag23">Lightning Labs Innovation</p>
+        </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">Staging (for your convenience)
+            <hr>
+        </div>
+
+        <div id="div3">    
+            <ol ondrop="drop(event)" ondragover="allowDrop(event)">OML your Preferences 1-11
+                <li class="placeholder">1</li>
+                <li class="placeholder">2</li>
+                <li class="placeholder">3</li>
+                <li class="placeholder">4</li>
+                <li class="placeholder">5</li>
+                <li class="placeholder">6</li>
+                <li class="placeholder">7</li>
+                <li class="placeholder">8</li>
+                <li class="placeholder">9</li>
+                <li class="placeholder">10</li>
+                <li class="placeholder">11</li>
+            </ol>
+        </div>
+        <div id="div3">
+            <ol ondrop="drop(event)" ondragover="allowDrop(event)">OML your Preferences 12-22
+                <li class="placeholder">12</li>
+                <li class="placeholder">13</li>
+                <li class="placeholder">14</li>
+                <li class="placeholder">15</li>
+                <li class="placeholder">16</li>
+                <li class="placeholder">17</li>
+                <li class="placeholder">18</li>
+                <li class="placeholder">19</li>
+                <li class="placeholder">20</li>
+                <li class="placeholder">21</li>
+                <li class="placeholder">22</li>
+            </ol>
+        </div>  
+
+        <input type="button" onclick="javascript:window.print();" id="Print" value="Print to PDF"></input>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
